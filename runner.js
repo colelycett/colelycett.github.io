@@ -60,5 +60,5 @@ function go() {
       }
   }
   alert(result);
-    document.getElementByID("result").innerHTML = result;
+    document.getElementById("result").innerHTML = result;
 }
