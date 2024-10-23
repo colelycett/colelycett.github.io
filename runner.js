@@ -60,4 +60,5 @@ function go() {
       }
   }
   alert(result);
+    document.getElementByID("t").innerHTML = result;
 }
