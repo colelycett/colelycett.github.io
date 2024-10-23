@@ -24,9 +24,9 @@ function go() {
           if (i == 0 || inputText[i-1] == ' ') {
               result += "c";
               result += sp[count %  sp.length];
-              if (!(i+1 == inputText.length || inputText[i-1] == ' '))
+              if (!(i+1 == inputText.length || inputText[i+1] == ' '))
                   result += "'";
-              if (i+1 < inputText.length && inputText[i] != inputText[i-1])
+              if (i+1 < inputText.length && inputText[i] != inputText[i+1])
                   count++;
           }
           else {
