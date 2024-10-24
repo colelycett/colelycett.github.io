@@ -31,6 +31,7 @@ function go() {
       else if (inputText[i] == 'y' || inputText[i] == 'Y') {
           if (d == -1) {
               result+="v";
+              i++;
           }
           else if (i == 0 || inputText[i-1] == ' ') {
               result += "c";
@@ -49,6 +50,8 @@ function go() {
 
           if (d==1)
             result += sp[count % sp.length];
+          else
+              i++;
           if (d == 1 && !(i+1 == inputText.length || inputText[i+1] == ' '))
               result += "'";
           if (d == 1 && i+1 < inputText.length && inputText[i] != inputText[i+1])
@@ -63,6 +66,8 @@ function go() {
 
           if (d==1)
             result += sp[count % sp.length];
+          else
+              i++;
           if (d == 1 && !(i+1 == inputText.length || inputText[i+1] == ' '))
               result += "'";
           if (d == 1 && i+1<inputText.length && inputText[i] != inputText[i+1])
