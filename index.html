@@ -22,14 +22,16 @@
   <br>
   <div align="left" style = "font-size: 20pt;">
     <!--<script src = "timeing.js";></script>-->
+    <label for="text">Input text to translate:</label><br>
+    <input id="text" name="text"><br>
+    
     <input type="radio" name="lang" id="toN" value="1">
     <label for="toN" style = "font-size: 12pt">To Naicun</label><br>
     
     <input type="radio" name="lang" id="FromN" value="-1">
     <label for="FromN" style = "font-size: 12pt">From Naicun</label><br>
     
-    <label for="text">Input text to translate:</label><br>
-    <input id="text" name="text"><br>
+    
     <input type="button" value="Enter" onclick="go()">
     <p id="result"></p>
     <script src="runner.js"></script>
