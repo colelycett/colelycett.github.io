@@ -30,9 +30,13 @@ function fuckApple(text) {
     for (let i = 0; i < text.length; i++) {
         if (text[i] == "“" || text[i] == "”")
             result += "\"";
-        if (text[i] == "’" || text[i] == "‘")
+        else if (text[i] == "’" || text[i] == "‘")
             result += "\'";
+        else
+            result += text[i];
     }
+
+    return result;
 }
 
 function columnarTranspose(numText) {
