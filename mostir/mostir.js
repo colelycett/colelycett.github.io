@@ -25,6 +25,15 @@ function cleanForDisplay(text) {
 
     return result;
 }
+function fuckApple(text) {
+    result = "";
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] == "“" || text[i] == "”")
+            result += "\"";
+        if (text[i] == "’" || text[i] == "‘")
+            result += "\'";
+    }
+}
 
 function columnarTranspose(numText) {
     if (numText.length % 3 != 0) {
@@ -62,6 +71,8 @@ function encipher(m) {
     //String alphabet = "KRYPTOSABCDEFGHIJLMNQUVWXZ";
     let keyword = document.getElementById("key").value;
     let plaintext = document.getElementById("plaintext").value;
+    keyword = fuckApple(keyword);
+    plaintext = fuckApple(plaintext);
     let ciphertext = "";
     let numSkips = 0;
 
