@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mostir Cipher</title>
+</head>
+
+<body style="background-color: darkslategray; text-align: center;">
+  <textarea id="key" >Enter Key Here</textarea><br><br>
+  <label for="plaintext" style="color: cyan">Enter text here:</label><br>
+  <textarea id="plaintext" style="width: 50%;">Enter Text Here</textarea><br><br>
+  <div style="text-align: center;">
+    <input style="width: 10%" type="button" onclick="encipher(1)" value="Encrypt"><br><br>
+    <input style="width: 10%" type="button" onclick="encipher(-1)" value="Decrypt"><br>
+    <script src="mostir.js"></script>
+  </div>
+  <pre id="ciphertext"></pre>
+</body>
+  
+</html>
