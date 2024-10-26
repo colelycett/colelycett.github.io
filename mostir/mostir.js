@@ -72,10 +72,11 @@ function invColumnarTranspose(numText) {
 function encipher(m) {
 
     let is_tabs = document.getElementById("disallow_tabs").checked;
+    let alphabet = "";
     if (!is_tabs)
-        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
     else
-        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\n";
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\n";
     //String alphabet = "KRYPTOSABCDEFGHIJLMNQUVWXZ";
     let keyword = document.getElementById("key").value;
     let plaintext = document.getElementById("plaintext").value;
