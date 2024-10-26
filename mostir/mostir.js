@@ -70,8 +70,12 @@ function invColumnarTranspose(numText) {
 }
 
 function encipher(m) {
-    
-    let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
+
+    let is_tabs = getElementById("disallow_tabs").checked;
+    if (!is_tabs)
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
+    else
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\n";
     //String alphabet = "KRYPTOSABCDEFGHIJLMNQUVWXZ";
     let keyword = document.getElementById("key").value;
     let plaintext = document.getElementById("plaintext").value;
