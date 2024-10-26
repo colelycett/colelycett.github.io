@@ -71,7 +71,8 @@ function invColumnarTranspose(numText) {
 
 function encipher(m) {
 
-    let is_tabs = getElementById("disallow_tabs").checked;
+    let is_tabs = getElementById("disallow_tabs").value;
+    alert(is_tabs);
     if (!is_tabs)
         let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
     else
