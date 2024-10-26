@@ -11,7 +11,10 @@
   <label for="plaintext" style="color: cyan">Enter text here:</label><br>
   <textarea id="plaintext" style="width: 50%;">Enter Text Here</textarea><br><br>
   <div style="text-align: center;">
-    <input style="width: 10%" type="button" onclick="encipher(1)" value="Encrypt"><br><br>
+    <input style="width: 10%" type="button" onclick="encipher(1)" value="Encrypt">
+    <input type="checkbox" id="disallow_tabs">
+    <p>Disallow Tabs</p>
+    <br><br>
     <input style="width: 10%" type="button" onclick="encipher(-1)" value="Decrypt"><br>
     <script src="mostir.js"></script>
   </div>
