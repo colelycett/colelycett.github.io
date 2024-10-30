@@ -74,7 +74,7 @@ function encipher(m) {
     let is_tabs = document.getElementById("disallow_tabs").checked;
     let alphabet = "";
     if (!is_tabs)
-        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\n\t";
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\t\n";
     else
         alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~` 1234567890!@#$%^&*()_+-={}[]|\\:;\"\'<,>.?/\n";
     //String alphabet = "KRYPTOSABCDEFGHIJLMNQUVWXZ";
