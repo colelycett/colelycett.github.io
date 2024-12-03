@@ -2,7 +2,7 @@ body{
     background-color: darkgreen;
     font-family: 'Lucida Sans';
 }
-label{
+label, p{
     color:cadetblue;
 }
 img{
