@@ -13,7 +13,7 @@ if (daysDiffH<=42) {
   dayH = daysDiffH;
   monthH = 1;
 }
-else if (daysDiffH>42 && daysDiffH<=87) {
+else if (daysDiffH>42 && daysDiffH<=129) { //87 days in second month, 87+42 = 129
   dayH = daysDiffH - 42;
   monthH = 2;
 }
