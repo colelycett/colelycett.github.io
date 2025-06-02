@@ -1,6 +1,6 @@
-const targetDateH = new Date("2025-02-11");
-const timeDiffH = Math.abs(today.getTime() - targetDateH.getTime());
-let daysDiffZ = Math.ceil((timeDiffH-((today.getTimezoneOffset()/60)*3600000)) / (1000 * 3600 * 24));
+const targetDateZ = new Date("2025-02-11");
+const timeDiffZ = Math.abs(today.getTime() - targetDateZ.getTime());
+let daysDiffZ = Math.ceil((timeDiffZ-((today.getTimezoneOffset()/60)*3600000)) / (1000 * 3600 * 24));
 
 let yearsDiffZ = Math.floor(daysDiffZ / 144);
 daysDiffZ %= 144;
