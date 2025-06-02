@@ -1,4 +1,5 @@
-const targetDateZ = new Date("2025-02-11");
+const targetDateZ = new Date("2025-02-12");
+//Starts from 11, which is Fa-kus anniversary
 const timeDiffZ = Math.abs(today.getTime() - targetDateZ.getTime());
 let daysDiffZ = Math.ceil((timeDiffZ-((today.getTimezoneOffset()/60)*3600000)) / (1000 * 3600 * 24));
 
